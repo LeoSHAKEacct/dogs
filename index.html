@@ -65,13 +65,18 @@
     backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,0.06);
   }
   nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1160px;margin:0 auto;}
-  .logo{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:800;color:var(--teal-dark);}
+  .logo{display:flex;align-items:center;gap:18px;font-size:24px;font-weight:800;color:var(--teal-dark);}
   .logo-mark{
-    width:40px;height:40px;border-radius:50%;background:var(--teal);
+    width:150px;height:150px;border-radius:50%;background:var(--teal);
     display:flex;align-items:center;justify-content:center;font-size:19px;
-    overflow:hidden;flex-shrink:0;border:2px solid var(--gold);
+    overflow:hidden;flex-shrink:0;border:5px solid var(--gold);
+    position:relative;z-index:60;margin:-55px 0;
+    box-shadow:0 14px 34px rgba(0,0,0,0.28);
   }
   .logo-mark img, .logo-mark svg{width:100%;height:100%;object-fit:cover;}
+  @media (max-width:600px){
+    .logo-mark{width:96px;height:96px;margin:-34px 0;}
+  }
   .nav-links{display:flex;gap:28px;font-weight:600;font-size:15px;color:var(--ink);}
   .nav-links a:hover{color:var(--teal);}
   .nav-actions{display:flex;gap:12px;align-items:center;}
